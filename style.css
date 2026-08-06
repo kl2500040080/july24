@@ -1,0 +1,54 @@
+body{
+
+    background:white;
+    font-family:Arial;
+}
+
+.container{
+
+    width:95%;
+    margin:auto;
+}
+
+header{
+
+    background:#11dbe6;
+    text-align:center;
+    padding:30px;
+    margin-top:20px;
+}
+
+nav{
+
+    background:pink;
+    padding:10px;
+    margin-top:20px;
+}
+
+nav a{
+
+    margin-right:10px;
+    color:purple;
+    font-size:22px;
+}
+
+section{
+
+    background:pink;
+    padding:20px;
+}
+
+button{
+
+    padding:10px 25px;
+    font-size:18px;
+}
+
+footer{
+
+    background:#11dbe6;
+    text-align:center;
+    padding:25px;
+    margin-top:20px;
+    font-size:22px;
+}
