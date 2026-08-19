@@ -1,0 +1,16 @@
+const number = 30;
+console.log(number);
+document.writeln(number);
+let numbers =23.5;
+console.log(numbers);
+document.writeln(numbers);
+let numbers1 =100;
+console.log(numbers1);
+document.writeln(numbers1);
+let numbers2 ="KLU";
+console.log(numbers2);
+document.writeln(numbers2);
+let numbers3 ="KLEF";
+numbers3+=numbers2;
+console.log(numbers3);
+document.writeln(numbers3);
