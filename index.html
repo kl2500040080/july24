@@ -1,48 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Moto Store</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f5f5f5;
+        }
+
+        #phoneList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px;
+            width: 250px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        #cart {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            text-align: left;
+        }
+
+        #searchBox {
+            padding: 8px;
+            width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
+
 <body>
-     <header>
-        <h1>Contact PAGE ...........!!!!!</h1>
-    </header>
-     <main>
-        <table border="5" style="margin: auto; text-align: center;">
-            <thead>
-                <tr>
-                    <th>Course_Code</th>
-                    <th>Subject_Name</th>
-                    <th>Course_Faculty</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>25SC2008</td>
-                    <td>Full Stack Web Development</td>
-                    <td>Mr. Dineshnath.G</td>
-                </tr>
-                <tr>
-                    <td>24SDCS02</td>
-                    <td>Full Stack Application Development</td>
-                    <td>Mr. Dineshnath.G</td>
-                </tr>
-                <tr>
-                    <td>23SDC02A</td>
-                    <td>Service Oriented Architecture using Microservices</td>
-                    <td>Mr. Dineshnath.G</td>
-                </tr>
-            </tbody>
-        </table>
-     </main>
-     <p> This below output from index.js which prints  2 to power of 5 :</p>
-       <script src="index.js"></script>
-      <footer>
-        <p>Copyright 2026 DEMO PAGE</p>
-    </footer>
-   
+
+    <h1>📱 Motorola Phone Store</h1>
+
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="Search by name or color..."
+        onkeyup="searchPhones()"
+    >
+
+    <br>
+
+    <button onclick="loadPhones()">Load Phones</button>
+
+    <div id="cart">
+        <b>
+            Cart:
+            <span id="cartCount">0</span>
+            items |
+            Total: ₹<span id="cartTotal">0</span>
+        </b>
+
+        <div id="cartItems"></div>
+    </div>
+
+    <div id="phoneList"></div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
